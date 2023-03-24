@@ -3,7 +3,7 @@ Dockerized development environment (Gitlab, Jenkins, Sonarcube)
 
 Steps
 1. Run 'docker-compose up -d' given a file with this context and names docker-compose.yml:
-
+```
 version: '3.7'
 
 services:
@@ -45,7 +45,7 @@ services:
 networks:
   gitlab-net:
     name: gitlab-network
-    
+```    
 
 2. Setup servers. Open localhost for gitlab, and set a new password. Open localhost:8080 and provide the initial password from jenkins container logs (you'll see it) and select Gitlab plugin for installation. Open localhost:9000 and follow instructions to login.
 
